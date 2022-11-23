@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: skyblue;
+        }
+        #form-h1{
+            margin-left: 577px;
+            margin-top: 18px;
+            color: rgb(55, 54, 54);
+            font-size: 35px;
+        }
+        .lab{
+            font-size: 22px;
+            color: rgb(251, 214, 48);
+            font-weight: bold;
+            margin-left: 645px;
+        }
+        .inp{
+            margin-left: 655px;
+            padding: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            margin-top: 3px;
+            width:220px;
+            cursor: pointer;
+            background-color: rgb(226, 227, 227);
+        }
+        .btn{
+            width: 160px;
+            height: 30px;
+            font-size: 15px;
+            color:rgb(54, 41, 246);
+            font-weight: bold;
+            border: none;
+            border-radius:6px;
+            background-color: rgb(248, 176, 42);
+            transition: 0.5s;
+            cursor: pointer;
+            margin-left: 687px;
+        }
+        .btn:hover{
+            width: 170px;
+            height: 35px;
+            font-size: 17px;
+            color:rgb(252, 38, 91);
+            font-weight: bold;
+            border-radius:8px;
+            background-color: rgb(168, 254, 126);
+            transition: 0.5s;
+        }
+    </style>
+    <title>Add Student Marks</title>
+</head>
+<body>
+        <h1 id="form-h1">Upload Student Marks!</h1><br/>
+        <form action="/result" method="post">
+            <label class="lab">Student ID : </label><br/>
+            <input type="number" class="inp" id="std_id" name="std_id" required placeholder="Enter Student ID"><br/><br/>
+            <label class="lab">Student Name : </label><br/>
+            <input type="text" class="inp" id="stdname" name="stdname" required placeholder="Enter Student Name"><br/><br/>
+            <label class="lab">Student Address : </label><br/>
+            <input type="text" class="inp" id="stdadd" name="stdadd" required placeholder="Enter Student Address"><br/><br/>
+            <label class="lab">Mathematics : </label><br/>
+            <input type="number" class="inp" id="math" name="math" required placeholder="Enter Mathematics Marks"><br/><br/>
+            <label class="lab">English : </label><br/>
+            <input type="number" class="inp" id="eng" name="eng" required placeholder="Enter English Marks"><br/><br/>
+            <label class="lab">Physics : </label><br/>
+            <input type="number" class="inp" id="phy" name="phy" required placeholder="Enter Physics Marks"><br/><br/>
+            <label class="lab">Chemistry : </label><br/>
+            <input type="number" class="inp" id="chem" name="chem" required placeholder="Enter Chemistry Marks"><br/><br/>
+            <label class="lab">Social Studies : </label><br/> 
+            <input type="number" class="inp" id="sst" name="sst" required placeholder="Enter Social Studies Marks"><br/><br/>
+            <button type="submit" id="submit" class="btn">Upload</button>
+        </form>
+</body>
+</html>
